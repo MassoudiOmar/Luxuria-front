@@ -1,0 +1,19 @@
+.carousel-main {
+  background-color: #9b9fa5d7;
+  display: flex;
+  margin-top: 20px;
+  border-radius: 5px;
+  width: 189vmin;
+
+}
+
+.Carousel img {
+  height: 98%;
+  width: 32.8%;
+  border-radius: 5px;
+  justify-content: space-evenly;
+  margin: 3px;
+}
+.Carousel-img:hover {
+  transform: scale(1.01);
+}

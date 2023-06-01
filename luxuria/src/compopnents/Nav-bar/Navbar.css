@@ -1,0 +1,59 @@
+.Navbar-header {
+  background-color: #313846;
+  min-height: 9vmin;
+  min-width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  position: sticky;
+  top: 0;
+  z-index: 1; /* Default z-index for the product card */
+}
+.categorie-nav {
+  font-size: 2.5vmin;
+  pointer-events: none;
+  font-weight: bold;
+  font-family: sans-serif;
+
+  color: rgb(255, 254, 254);
+  flex: 1;
+}
+.categorie-nav-two {
+  font-size: 2.5vmin;
+  pointer-events: none;
+  font-weight: bold;
+  font-family: sans-serif;
+
+  color: rgb(255, 255, 255);
+  flex: 1;
+}
+
+.search-bar {
+  flex: 2;
+  height: 4vmin;
+  border-radius: 5px;
+  border: #d2dbef;
+  margin-right: 5px;
+}
+.search-button {
+  height: 4.2vmin;
+  border-radius: 5px;
+  font-weight: bold;
+  border: #d2dbef;
+  color: aliceblue;
+  background-color: cadetblue;
+}
+.search-button:hover {
+  background-color: #9fa3ac;
+}
+.flex-span {
+  flex: 1;
+}
+
+@media screen and (max-width: 500px) {
+  .categorie-nav-two,
+  .flex-span {
+    display: none;
+  }
+}

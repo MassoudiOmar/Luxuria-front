@@ -1,0 +1,20 @@
+
+.Footer-main {
+    font-size: 6vmin;
+    pointer-events: none;
+    text-align: start;
+  }
+  
+  
+  .App-Footer {
+    background-color: #252e40;
+    min-height: 15vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+  
+  

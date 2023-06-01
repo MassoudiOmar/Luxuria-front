@@ -1,0 +1,50 @@
+.Layout-header {
+  background-color: #252e40;
+  min-height: 13vmin;
+  display: flex;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Layout-logo {
+  font-size: 4vmin;
+  font-weight: bold;
+  pointer-events: none;
+  margin-right: auto;
+  flex: 1;
+  font-family: sans-serif;
+  color: aquamarine;
+}
+
+.Link-main {
+  font-size: 2vmin;
+  pointer-events: none;
+  flex: 0.5;
+  font-family: sans-serif;
+  color: antiquewhite;
+  font-weight: bold;
+}
+
+.Link-main-two {
+  font-size: 2vmin;
+  pointer-events: none;
+  font-weight: bold;
+  flex: 0.5;
+  text-align: right;
+  font-family: sans-serif;
+  color: antiquewhite;
+}
+.center-header {
+  flex: 2;
+}
+.end-main {
+  flex: 0.1;
+}
+
+@media screen and (max-width: 1000px) {
+  .Link-main-two,
+  .center-header {
+    display: none;
+  }
+}
