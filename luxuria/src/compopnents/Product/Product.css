@@ -42,41 +42,66 @@
   background-color: #ffffff68;
   display: flex;
   flex-direction: row;
-  justify-content: right;
-
+  align-items: center;
   border-radius: 0px 0px 5px 5px;
   width: 189vmin;
-  align-items: center;
   overflow-x: auto;
-}
-
-.Product-main::-webkit-scrollbar {
-  width: 0; /* For Chrome, Safari, and Opera */
+  
 }
 
 .Product-card {
   background-color: #ffffffc5;
   margin: 3px;
-  border-radius: 5px;
+    cursor: pointer;
+    border-radius: 5px;
   margin-top: 2px;
 }
+
 .Product-card:hover {
   transform: scale(1.01);
 }
+
 .Offeres-img {
   height: 240px;
   width: 30.6vmin;
-  background-size: cover;
   border-radius: 5px 5px 0px 0px;
-  justify-content: space-evenly;
 }
+
 .title-price {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .Offeres-title,
 .Offeres-price {
   flex: 1;
   color: black;
+}
+
+.Product-main::-webkit-scrollbar {
+  height: 10px;
+  margin-bottom: 10px;
+}
+
+.Product-main::-webkit-scrollbar-track {
+  width: 6px;
+  margin-bottom: 10px;
+  background-color: transparent;
+}
+
+
+.Product-main::-webkit-scrollbar-thumb {
+  background-color:transparent;
+  border-radius: 100px;
+  margin-bottom: 10px;
+  width: 6px;
+  margin-bottom: 10px;
+}
+
+.Product-main::-webkit-scrollbar-thumb:hover {
+  margin-bottom: 10px;
+  width: 6px;
+  margin-top: 10px;
+  background-color: #ffffffaf;
 }

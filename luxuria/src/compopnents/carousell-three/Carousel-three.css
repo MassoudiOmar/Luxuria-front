@@ -1,0 +1,21 @@
+.carousel-three-main {
+    background-color: #9b9fa5d7;
+    display: flex;
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 189vmin;
+    max-height: 45vmin;
+    cursor: pointer;
+  }
+  
+  .Carousel-three img {
+    height: 98%;
+    width: 99.5%;
+    border-radius: 5px;
+    justify-content: space-evenly;
+    margin: 3px;
+  }
+  .Carousel-three-img:hover {
+    transform: scale(1.003);
+  }
+  

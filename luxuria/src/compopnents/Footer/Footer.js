@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div className="Footer">
       <footer className="App-Footer">
-       <span className='Footer-logo'>LUXURIA</span>
+       <span className='Footer-logo'>FOOTER</span>
       </footer>
     </div>
   );

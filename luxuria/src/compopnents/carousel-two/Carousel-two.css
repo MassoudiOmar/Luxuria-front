@@ -1,20 +1,20 @@
-.carousel-main {
+.carousel-two-main {
   background-color: #9b9fa5d7;
   display: flex;
   margin-top: 20px;
   border-radius: 5px;
-  width: 189vmin;
-  cursor: pointer;
-
+    cursor: pointer;
+    width: 189vmin;
+  max-height: 45vmin;
 }
 
-.Carousel img {
+.Carousel-two img {
   height: 98%;
-  width: 32.8%;
+  width: 49.5%;
   border-radius: 5px;
   justify-content: space-evenly;
   margin: 3px;
 }
-.Carousel-img:hover {
-  transform: scale(1.01);
+.Carousel-two-img:hover {
+  transform: scale(1.008);
 }
