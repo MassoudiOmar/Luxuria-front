@@ -1,4 +1,3 @@
-
 .Categorie-main {
   background-color: #ffffffd6;
   display: flex;
@@ -13,21 +12,20 @@
 .Categorie-card {
   background-color: transparent;
   margin: 3px;
-    cursor: pointer;
-    border-radius: 5px;
+  cursor: pointer;
+  border-radius: 5px;
   margin-top: 10px;
 }
 
 .Categorie-card:hover {
   transform: scale(1.01);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.331); /* Adjust the values as desired */
-
 }
 
 .Offeres-Categorie-img {
-    height: 20vmin;
-    width: 22.6vmin;
-    border-radius: 30px;
+  height: 22vmin;
+  width: 22.8vmin;
+  border-radius: 30px;
 }
 
 .title-Categorie-price {
@@ -53,16 +51,16 @@
 }
 
 .Categorie-main::-webkit-scrollbar-thumb {
-  background-color:transparent;
+  background-color: transparent;
   border-radius: 100px;
   margin-bottom: 10px;
-  width: 6px;
+  width: 5px;
   margin-bottom: 10px;
 }
 
-.Categorie-main::-webkit-scrollbar-thumb:hover {
+.Categorie-main:hover::-webkit-scrollbar-thumb {
   margin-bottom: 10px;
   width: 6px;
   margin-top: 10px;
-  background-color: #433d3da9;
+  background-color: #100f0fa9;
 }

@@ -1,21 +1,35 @@
 import React, { useState, useEffect } from "react";
 import "./Product-two.css";
+import { useParams, Link } from "react-router-dom";
 
-export default function ProductTwo() {
-  var array = [1, 1, 1, 1, 1, 1, 1, 1,1,1,1,1];
+export default function ProductTwo(props) {
+  const [product, setProduct] = useState();
 
+  useEffect(() => {
+    setProduct(props.data);
+  }, [props.data]);
+
+  useEffect(() => {
+    if (props.data === undefined) {
+      console.log("Error occurred while fetching data");
+    }
+  }, []);
   return (
     <div>
       <div className="Product-two-main">
-        {array.map((e, i) => {
+        {product?.map((e, i) => {
           return (
             <div className="Product-two-card">
-              <img
-                className="Product-two-Offeres-img"
-                src="https://b2cfurniture.com.au/pub/media/catalog/product/cache/3fb871f48f7af5e44260f2d9fd3932a9/e/l/elm-modern-hardwood-dining-chair-black-hardwood-frame-eco-friendly-beige-fabric_3_.jpg"
-              />
+              <Link to={`/${e.title}`}>
+                <img className="Product-two-Offeres-img" src={e.thumbnail} />
+              </Link>
               <div className="Product-two-title-price">
-                <span className="Product-two-Offeres-title">Title</span>
+                <span className="Product-two-Offeres-title">
+                  {" "}
+                  {e.title.length > 15
+                    ? e.title.substring(0, 15) + "..."
+                    : e.title}
+                </span>
               </div>
             </div>
           );

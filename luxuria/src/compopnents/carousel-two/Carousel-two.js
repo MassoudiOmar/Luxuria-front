@@ -7,7 +7,7 @@ export default function carouselTwo() {
         <span className="Carousel-two-span">
           <img
             className="Carousel-two-img"
-            src="https://img.freepik.com/free-vector/realistic-ad-with-product-landing-page_52683-70867.jpg?w=2000"
+            src="https://www.tunisiatech.tn/img/cms/smartphone-redmi-xiaomi-en-tunisie-01.jpg"
           />
         </span>
         <span className="Carousel-two-span">

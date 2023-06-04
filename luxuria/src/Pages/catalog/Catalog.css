@@ -1,0 +1,123 @@
+.catalog-main {
+  background-color: #ffffff68;
+  display: flex;
+  align-items: center;
+  border-radius: 0px 0px 5px 5px;
+  max-width: 189vmin;
+  justify-content: center;
+}
+
+.side-filter {
+  text-align: start;
+  margin: 3px;
+  display: grid;
+  flex: 1;
+  place-self: flex-start;
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+}
+.side-filter span {
+  display: grid;
+}
+
+.product-filtered {
+  flex: 3;
+}
+.catalog-search, .price-search {
+  flex-direction: row;
+  border-bottom: 0.01px solid #00000030;
+  margin: 3px;
+}
+.catalog-title {
+  color: black;
+  font-size: x-large;
+  font-weight: 600;
+  min-height: 5vmin;
+  align-items: center;
+  margin: 3px;
+}
+.catalog-categories,
+.marque-name,
+.price-Max-value {
+  color: black;
+  font-size: large;
+  margin-left: 3px;
+  min-height: 5vmin;
+  align-items: center;
+}
+.catalog-categories:hover,
+.solde-list:hover, 
+  .marques-list:hover {
+ background-color: #0000000e;
+}
+
+.marques-list {
+  margin: 3px;
+  display: flex;
+  
+}
+
+.solde-list {
+  margin: 3px;
+  display: flex; 
+}
+.solde-checkbox{
+  border-radius: 100px;
+}
+.marque-search {
+  max-height: 20vmin;
+  overflow-y: auto;
+  border-bottom: 0.01px solid #00000030;
+}
+.solde-search{
+  border-bottom: 0.01px solid #00000030;
+}
+
+.marque-search::-webkit-scrollbar {
+  max-width: 5px;
+}
+
+.marque-search::-webkit-scrollbar-track {
+  margin-bottom: 10px;
+}
+
+.marque-search::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 100px;
+  margin-bottom: 10px;
+  width: 6px;
+  margin-bottom: 10px;
+}
+
+.marque-search:hover::-webkit-scrollbar-thumb {
+  background-color: #000000c3;
+}
+
+.double-range-slider {
+  width: 90%;
+  height: 10px;
+  border-radius: 5px;
+  background: #ddd;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.double-range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #4caf50;
+  cursor: pointer;
+}
+
+.double-range-slider::-webkit-slider-thumb:hover {
+  opacity: 1;
+}
+
+.double-range-slider::-webkit-slider-thumb:active {
+  transform: scale(1.2);
+}

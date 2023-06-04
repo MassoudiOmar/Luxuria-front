@@ -6,10 +6,11 @@
 
 .App-main {
   background-color: #282c34;
-  min-height: 1000vh;
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+}
+
+.all {
+  background-color: #282c34;
+  
 }

@@ -5,9 +5,25 @@
   width: 189vmin;
   display: flex;
   text-align: start;
-  min-height: 7vmin;
   font-weight: bold;
   align-items: center;
+  text-align: center;
+}
+.Offeres-title{
+  color: rgb(49, 3, 81);
+  font-size: x-large;
+}
+
+.discountPercentage{
+  border: #3f5e9c8a solid 1px;
+  border-color: rgba(255, 0, 0, 0.091);
+  font-size: small;
+  border-radius: 3px;    margin-left: 10px;
+
+  min-width: 15px;
+  height: 5px;
+  background-color: rgb(255 0 0 / 42%);
+  color: white;
 }
 
 .Offeres-product-title-two {
@@ -41,21 +57,34 @@
 .Product-main {
   background-color: #ffffff68;
   display: flex;
-  flex-direction: row;
-  align-items: center;
   border-radius: 0px 0px 5px 5px;
   width: 189vmin;
   overflow-x: auto;
-  
 }
 
 .Product-card {
   background-color: #ffffffc5;
   margin: 3px;
-    cursor: pointer;
-    border-radius: 5px;
+  cursor: pointer;
+  border-radius: 5px;
   margin-top: 2px;
+  text-align: center;
 }
+.Product-card {
+  position: relative;
+}
+
+.discount-percentage {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(255, 0, 0, 0.572); /* Optional styling for the background color */
+  color: white; /* Optional styling for the text color */
+  padding: 5px; /* Optional padding */
+  font-size: medium;
+  border-radius: 5px;
+}
+
 
 .Product-card:hover {
   transform: scale(1.01);
@@ -63,25 +92,27 @@
 
 .Offeres-img {
   height: 240px;
-  width: 30.6vmin;
+  width: 37vmin;
   border-radius: 5px 5px 0px 0px;
 }
-
-.title-price {
+.title-price{
+  justify-content: space-around;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: large;
+  margin-top: 10px;
 }
-
-.Offeres-title,
-.Offeres-price {
-  flex: 1;
+.Offeres-price{
   color: black;
+  font-weight: 500;
+}
+.Offeres-finalprice {
+  color: grey;
 }
 
 .Product-main::-webkit-scrollbar {
   height: 10px;
-  margin-bottom: 10px;
+  width: 1px;
+  margin-bottom: 100px;
 }
 
 .Product-main::-webkit-scrollbar-track {
@@ -90,18 +121,13 @@
   background-color: transparent;
 }
 
-
 .Product-main::-webkit-scrollbar-thumb {
-  background-color:transparent;
+  background-color: transparent;
   border-radius: 100px;
   margin-bottom: 10px;
   width: 6px;
   margin-bottom: 10px;
 }
-
-.Product-main::-webkit-scrollbar-thumb:hover {
-  margin-bottom: 10px;
-  width: 6px;
-  margin-top: 10px;
-  background-color: #ffffffaf;
+.Product-main:hover::-webkit-scrollbar-thumb {
+  background-color: #ffffffc3;
 }

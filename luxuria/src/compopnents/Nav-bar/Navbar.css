@@ -1,27 +1,31 @@
 .Navbar-header {
   background-color: #313846;
   min-height: 9vmin;
-  min-width: 90%;
+  max-width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: calc(10px + 2vmin);
   position: sticky;
   top: 0;
-  z-index: 1; /* Default z-index for the product card */
+  margin: 0 auto;
+  border-radius: 0 0 10px 10px;
+  z-index: 1;
 }
+
+
 .categorie-nav {
   font-size: 2.5vmin;
   pointer-events: none;
   font-weight: bold;
   font-family: sans-serif;
-
-  color: rgb(255, 254, 254);
-  flex: 1;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  flex: 1 1;
 }
 .categorie-nav-two {
   font-size: 2.5vmin;
-  pointer-events: none;
+  pointer-events: none;    text-align: center;
+
   font-weight: bold;
   font-family: sans-serif;
 
@@ -32,13 +36,13 @@
 .search-bar {
   flex: 2;
   height: 4vmin;
-  border-radius: 5px;
+  width: 35vmin;
+  border-radius: 5px 0 0 5px;
   border: #d2dbef;
-  margin-right: 5px;
 }
 .search-button {
   height: 4.2vmin;
-  border-radius: 5px;
+  border-radius: 0 5px 5px 0;
   font-weight: bold;
   border: #d2dbef;
   color: aliceblue;
@@ -48,9 +52,33 @@
   background-color: #9fa3ac;
 }
 .flex-span {
-  flex: 1;
+  flex: 0.5;
 }
 
+.search-results {
+  position: absolute;
+  width: 18.5%;
+  background-color: #ffffff;
+  color: #000000;
+  list-style-type: none;
+  margin: 0;
+  border: 1px solid #000000;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+.search-result-item {
+  cursor: pointer;
+}
+.search-bar-data {
+  font-size: medium; text-decoration: none;
+  color: #000; /* Customize the color */
+  /* Add any additional styles as needed */
+  justify-content: start;
+}
+.search-result-item:hover {
+  background-color: #f2f2f2;
+}
 @media screen and (max-width: 500px) {
   .categorie-nav-two,
   .flex-span {

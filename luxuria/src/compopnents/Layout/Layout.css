@@ -1,6 +1,8 @@
 .Layout-header {
   background-color: #252e40;
   min-height: 13vmin;
+  min-width: 100%;    text-align: center;
+
   display: flex;
   align-items: center;
   font-size: calc(10px + 2vmin);

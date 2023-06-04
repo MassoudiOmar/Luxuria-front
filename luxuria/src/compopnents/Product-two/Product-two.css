@@ -17,6 +17,7 @@
   cursor: pointer;
   margin-top: 10px;
   margin-bottom: 5px;
+  text-align: center;
 }
 
 .Product-two-card:hover {
